@@ -36,6 +36,8 @@ resource "aws_instance" "docker" {
 sudo su
 yum install git -y
 yum install docker -y
+curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
 systemctl start docker
 EOF
 tags = {
