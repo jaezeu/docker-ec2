@@ -41,6 +41,6 @@ chmod +x /usr/local/bin/docker-compose
 systemctl start docker
 EOF
 tags = {
-    Name = "jaz-docker-coaching"
+    Name = "jaz-docker-coaching"   #Change the value of this
   }
 }
